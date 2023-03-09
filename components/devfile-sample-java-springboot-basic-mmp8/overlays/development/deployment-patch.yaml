@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-java-springboot-basic-mmp8
+  namespace: e2e-demos-vdaq-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:91374c06d9c4c5de31ea654dec057e1ce1c9222b339a12917a39825be2474f22
+        name: my-java-springboot
+        resources: {}
+status: {}
